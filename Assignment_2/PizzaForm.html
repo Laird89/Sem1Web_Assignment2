@@ -1,0 +1,81 @@
+<html>
+    <head><title>PizzaOrder</title></head>
+    <body style="background-image:url('multimedia/Pizza.jpg'); background-size:cover;">
+        <header><h1>Lairds Pizza</h1></header>
+        <form name="pizzaorder" action="PizzaFormSubmitted.html" method="post">
+            <table>
+                <tr>
+                    <td><label for="custname">Customer name: </label> </td>
+                    <td><input id="custname" type="text" name="custname" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Pizza Base: </label></td>
+                    <td>
+                    <select name="pizzabase" id="pb">
+                        <option value="handtossed">hand tossed</option>
+                        <option value="thincrust">thin crust</option>
+                        <option value="regular">regular</option>
+                    </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Pizza Type:</label></td>
+                    <td>
+                    <select name="pizzatype" id="pt">
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="cheese">Cheese</option>
+                        <option value="veggie">Veggie Lovers</option>
+                        <option value="hawaiian">Hawaiin</option>
+                    </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="pizzasize">Pizza size: </label> </td>
+                    <td><input id="pizzasize" type="text" name="pizzasize" required placeholder="small/medium/large" maxlength="6" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Drink: </label></td>
+                    <td>
+                    <select name="drink" id="drink">
+                        <option value="coke">Coke</option>
+                        <option value="juice">Juice</option>
+                        <option value="cd">Canada dry</option>
+                    </select>
+                    </td>
+                </tr>
+        
+                 <tr>
+                    <td><label for="qofdrinks">Quantity of drinks: </label></td>
+                    <td><input type="number" name="qofdrinks" id="qofdrinks" min="0" max="10"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Desert: </label></td>
+                    <td>
+                    <select name="desert" id="desert">
+                        <option value="brownie">Brownie</option>
+                        <option value="icecream">Ice cream</option>
+                    </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Delivery option: </label></td>
+                    <td>
+                    <select name="delivery" id="delivery">
+                        <option value="yesdelivery">Yes</option>
+                        <option value="nodelivery">No</option>
+                    </select>
+                    </td>
+                </tr>
+            </table><br>
+            <input type="submit" action="MainPage.html" value="Submit">
+            <input type="reset" value="Clear Order">
+        </form>
+        <a href="MainPage.html"><button>Click to go back to main</button></a>
+    </body>
+</html>

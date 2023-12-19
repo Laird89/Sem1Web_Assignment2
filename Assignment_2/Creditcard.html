@@ -1,0 +1,85 @@
+<html>
+    <head><title>Credit Card</title></head>
+    <body>
+        <header><h1>Order form</h1></header>
+        <form name="CreditCardform" action="MainPage.html" method="post">
+            <fieldset>
+                <legend>Member information</legend>
+                <table>
+                    <tr>
+                       <td><label for="em">Email :</label></td>
+                        <td><input type="email" id="em" name="memberinfo1" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fn">First name :</label></td>
+                        <td><input type="text" id="fn" name="memberinfo2" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ln">Last name :</label></td>
+                        <td><input type="text" id="ln" name="memberinfo3" required></td>
+                    </tr>
+                    
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Credit Card Information</legend>
+                <table>
+                    <tr>
+                       <td><label for="credtype">Credit Type: </label></td><!--need to fix the type of this-->
+                        <td><input type="text" id="credtype" name="credittype" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cn">Card number: </label></td>
+                        <td><input type="text" id="cn" name="cardnumber" placeholder="16 digits" maxlength="16" required></td>
+                    </tr>
+                <table>
+                    <tr>
+                        <td><label>Expiration date: </label></td>
+                        <td>
+                        <select name="Month" id="month">
+                            <option value="jan">January</option>
+                            <option value="feb">February</option>
+                            <option value="mar">March</option>
+                            <option value="apr">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="july">July</option>
+                            <option value="aug">August</option>
+                            <option value="sept">September</option>
+                            <option value="oct">October</option>
+                            <option value="nov">November</option>
+                            <option value="dec">December</option>
+                        </select>
+                        </td>
+                        <td>
+                            <select name="Year" id="year">
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                                <option value="2031">2031</option>
+                                <option value="2032">2032</option>
+                            </select>
+                            </td>
+                    </tr>
+                </table>
+                    
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Submit Your Order</legend>
+                <table>
+                    <tr>
+                        <td><a href="MainPage.html"><input type="submit" value="Submit" name="btnsubmit"></a></td>
+                        <td><input type="reset" value="Reset Fields" name="btnreset"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <a href="MainPage.html"><button>Click to go back to main</button></a>
+    </body>

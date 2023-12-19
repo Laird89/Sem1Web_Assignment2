@@ -1,0 +1,66 @@
+<html>
+    <head><title>Survey</title></head>
+    <body>
+        <header><h1>Please complete our survey</h1></header>
+        <form name="contactinfo" action="MainPage.html" method="post">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <font size="+1"><strong>Contact information</strong></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="em">Email address :</label> </td>
+                    <td><input id="em" type="email" name="emaddress" required></td>
+                </tr>
+                <tr>
+                    <td><label for="fm">First name :</label> </td>
+                    <td><input id="fm" type="text" name="firstname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lm">Last name :</label> </td>
+                    <td><input id="lm" type="text" name="lastname" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <font size="+1"><strong>Geographical information</strong></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="state">State :</label></td>
+                    <td><input id="state" type="text" name="state" maxlength="2" placeholder="Two characters"></td>
+                </tr>
+                <tr>
+                    <td><label for="zip">Zip code :</label></td>
+                    <td><input id="zip" type="text" name="zipcode" maxlength="5" placeholder="Five digits"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <font size="+1"><strong>How did you hear about us?</strong></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="websearch">Web search :</label></td>
+                    <td><input type="checkbox" id="websearch" name="websearch" value="websearch"></td>
+                </tr>
+                <tr>
+                    <td><label for="facebook">Facebook :</label></td>
+                    <td><input type="checkbox" id="facebook" name="facebook" value="facebook"></td>
+                </tr>
+                <tr>
+                    <td><label for="twitter">Twitter :</label></td>
+                    <td><input type="checkbox" id="twitter" name="twitter" value="twitter"></td>
+                </tr>
+                <tr>
+                    <td><label for="emmessage">Email message :</label></td>
+                    <td><input type="checkbox" id="emmessage" name="emmassage" value="emmessage"></td>
+                </tr>
+            </table>
+            <h2>Thank you for taking our survey</h2>
+            <a href="MainPage.html"><input type="submit" value="Submit"></a>
+            <input type="reset">
+        </form>
+        <a href="MainPage.html"><button>Click to go back to main</button></a>
+    </body>
+</html>
